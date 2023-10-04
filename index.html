@@ -30,32 +30,40 @@
         </nav>
       </header>
     <main>
-        <h1 id="acerca-de-mi">ACERCA DE MI</h1><br><br>
-        <div class="">
-            <img class="img" src="imagenes/yo.jpg" style="float:left;" width="250" height="250" alt="foto de nestor"
-            title="Foto Personal"> <br>
-        </div>
-        <div class="ACERCA">
-            <h2 class="subtitulo">DESARROLLADOR WEB - FRONTEND </h2> <br>
-            <p class="parrafo">Estudiante de 9 semestre de ingeniería en sistemas. capacidad para
-                trabajar en equipo y buen manejo de relaciones interpersonales, alto
-                liderazgo, sentido de pertenencia y compromiso por los resultados,
-                adaptabilidad al cambio y tolerancia a la frustración.
-            </p>
-            <br>
-            <br>
-        </div>
-        <div class="contenedor">
-            <div class="container-1">
-                <div class="col-sm-6"><h6>Nombres: <span class="text-secondary">Nestor Enrique</span></h6></div>
-                <div class="col-sm-6"><h6>Apellidos: <span class="text-secondary">Ustariz Andrade</span></h6></div>
-                <div class="col-sm-6"><h6>Estudios: <span class="text-secondary">Universidad Popular del Cesar</span></h6></div>
-                <div class="col-sm-6"><h6>Telefono: <span class="text-secondary">+57 3246826739</span></h6></div>
-                <div class="col-sm-6"><h6>Email: <span class="text-secondary">andradekike0@gmail.com</span></h6></div>
-                <div class="col-sm-6"><h6>Ubicación: <span class="text-secondary">Valledupar - Cesar, COLOMBIA</span></h6></div>
-                <div class="col-sm-6"><h6>Disponibilidad: <span class="text-secondary">Disponible</span></h6></div>
-            </div>
-        </div>
+        <section class="container-acerca">
+            
+            <h1 id="acerca-de-mi">ACERCA DE MI</h1><br><br>
+            <section id="acerca">
+                <div class="foto">
+                    <img class="img" src="imagenes/yo.jpg" style="float:left;" width="250" height="250" alt="foto de nestor"
+                    title="Foto Personal"> <br>
+                </div>
+                <div>
+
+                    <div class="ACERCA">
+                        <h2 class="subtitulo">DESARROLLADOR WEB - FRONTEND </h2> <br>
+                        <p class="parrafo">Estudiante de 9 semestre de ingeniería en sistemas. capacidad para
+                        trabajar en equipo y buen manejo de relaciones interpersonales, alto
+                        liderazgo, sentido de pertenencia y compromiso por los resultados,
+                        adaptabilidad al cambio y tolerancia a la frustración.
+                        </p>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="contenedor">
+                            <h6>Nombres: Nestor Enrique</h6>
+                            <h6>Apellidos: Ustariz Andrade</h6>
+                            <h6>Estudios: Universidad Popular del Cesar</h6>
+                            <h6>Telefono: +57 3246826739</h6>
+                            <h6>Email: andradekike0@gmail.com</h6>
+                            <h6>Ubicación: Valledupar - Cesar, COLOMBIA</h6>
+                            <h6>Disponibilidad: Disponible</h6>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+        
     </main>
 
     <div id="container">
@@ -137,7 +145,7 @@
                 <textarea id="mensaje" name="mensaje"></textarea>
             </div>
 
-            <div class="contenedor">
+            <div class="contenedor2">
 
               <div class="form-row">
                 <button type="submit" onclick='return enviarFormulario();'>Enviar</button>
