@@ -1,0 +1,603 @@
+.rojo{
+    color: red;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+body{
+    background-color: #FFFF;
+    font-family: 'calibri';
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+header{
+    background-color: #03A9F4;
+    width: 100%;
+    clear: both;
+    content: '';
+    display: table;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 5px;
+
+}
+/*MENU*/
+#check{
+    display: none;
+}
+.logo {
+    display: inline-block;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 50px;
+    font-weight: bold;
+    color: white;
+}
+
+.checkbtn{
+    font-size: 25px;
+    color: #FFFF;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    padding: 0px 50px;
+
+}
+
+nav{
+    float: right;
+    flex-wrap: wrap;
+
+}
+
+
+  
+  nav ul.nav-links li a {
+    color: #eee;
+    font-size: 17px;
+    text-transform: uppercase;
+  }
+  
+
+nav ul li {
+
+    display: inline-block;
+    list-style: none;
+    position: relative;
+    margin:  30px 10px;
+
+}
+  
+nav a {
+    color: #444;
+    text-decoration: none;
+    padding: 5px;
+}
+
+nav ul li a{
+
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul li a::before{
+
+    display: block;
+    content: '';
+    width: 0%;
+    background: #444;
+    height: 3px;
+    top: 0;
+    position: absolute;
+    transition: width 1s;
+ 
+}
+
+nav ul li a:hover:before{
+    width: 100%;
+
+}
+/*FIN DE MENU DE NAVEGACION*/
+
+
+h3,h4,h5,h6,p{
+    color: #020202;
+    font-family: 'Courier New', Courier, monospace;
+} 
+h2{
+    color: #020202 !important;
+    font-weight: bold;
+}
+
+h1{
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    color:#03A9F4
+    
+}
+
+/*TODO LO QUE VA EN EL MAIN -- CENTRO*/
+main{
+    background-color: white;
+    flex-grow: 1;
+    margin-bottom: 5px;
+    padding: 30px;
+    width: 100%;
+    flex-wrap: wrap;
+    
+}
+.subtitulo{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    display: flex;
+    justify-content: left;
+    padding: 0px 100px;
+    flex-wrap: wrap;
+    
+}
+
+ .text-secondary{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 0.2rem;
+    font-weight: 500;
+    line-height: 1.2;
+    flex-wrap: wrap;
+}
+
+.col-sm-6{
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    text-align: left;
+    margin-bottom: 0.5rem;
+    font-weight: 15;
+    line-height: 1.2;
+    flex-wrap: wrap;
+    padding: 0px 56px;
+}
+
+
+.parrafo{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    text-align: left;
+    padding: 1px 310px;
+    flex-wrap: wrap;
+    text-align: justify;
+
+}
+
+
+/*CONTENEDOR DE LAS HABILIDADES*/
+
+#container{
+    background-color: white;
+    flex-grow: 1;
+    margin-bottom: 5px;
+    padding: 30px;
+    width: 100%;
+}
+
+.container-habilidades{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100;
+    padding: 30px;
+    display: flex;
+}
+.container-habilidades .box{
+
+    position: relative;
+    padding: 40px 0;
+    width: 220px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.container-habilidades .box .circle{
+
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background: conic-gradient(from 0deg, var(--clr) 0%,var(--clr)
+    0% var(--i),#333 var(--i), #333 100%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-habilidades .box .circle::before{
+    content: '';
+    position: absolute;
+    inset: 10px;
+    background: #25252b;
+    border-radius: 50%;
+}
+
+.container-habilidades .box h3{
+
+    position: relative;
+    text-align: center;
+    font-size: 2.5em;
+    color: white;
+    font-weight: 600;
+}
+
+.container-habilidades .box h3 small{
+
+    font-size: 0.5em;
+    font-weight: 300;
+}
+
+.container-habilidades .box h4{
+    color: black;
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-weight: 0;
+    letter-spacing: 0.1em;
+}
+
+
+/*-------------------TRABAJOS----------------------------------------*/
+#container-trabajos{
+    background-color: white;
+    flex-grow: 1;
+    margin-bottom: 5px;
+    padding: 35px;
+    width: 100%;
+}
+
+.trabajos-container{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1100;
+    padding: 30px;
+    display: flex;
+}
+
+.trabajos-container .card{
+
+    position: relative;
+    max-width: 200px;
+    height: 160px;
+    background-color: aquamarine;
+    margin: 30px 10px;
+    padding: 15px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0, 0, 0, 0, 5);
+    transition: 0.3s ease-in-out;
+}
+
+.trabajos-container .card:hover{
+
+    height: 300px;
+
+}
+
+.trabajos-container .card .image{
+
+    position: relative;
+    width: 160px;
+    height: 160px;
+    top: -60px;
+    left: 10px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0, 5);
+}
+
+.trabajos-container .card .image img{
+
+    max-width: 100%;
+    border-radius: 50px;
+}
+
+.trabajos-container .card .content{
+
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.trabajos-container .card:hover .content{
+
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+
+.titulo{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0px 160px
+}
+
+.parrafo1{
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    text-align: right;
+    text-align: justify;
+    padding: 0px 55px;
+}
+/*--------------------FORMULARIOS----------------------------*/
+.container-consultas{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-consultas{
+    
+    border-radius: 3px;
+      
+    width: 80%;
+    margin: 10px auto;
+    padding: 50px;
+    
+}
+.formulario {
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+  
+    width: 80%;
+    padding: 50px;
+    margin: 30px 0 40px 0;
+}
+
+/* ------------- Campos del Formulario ------------- */
+
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+  
+.form-row input[type="text"]{
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+}
+.form-row input[type="email"]{
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+
+}
+  
+.form-row label {
+    margin-bottom: 3px;
+    text-align: initial;
+}
+
+.form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+  
+  
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+  
+  
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+  
+  
+    width: 100%;
+}
+
+/*---------------BOTON----------------------------------------*/
+.form-row button {
+    font-size: 16px;
+    font-weight: bold;
+  
+  
+    color: #ffffff;
+    background-color: #5995da;
+  
+  
+    border: none;
+    border-radius: 3px;
+    margin-right: 10px;
+  
+  
+  
+    padding: 10px 40px;
+    cursor: pointer;
+}
+  
+  
+.form-row button:hover {
+    background-color: #76aeed;
+}
+  
+  
+.form-row button:active {
+    background-color: #407fc7;
+}
+  
+.form-row-cancelar button {
+  
+    font-size: 16px;
+    font-weight: bold;
+  
+  
+    color: #ffffff;
+    background-color: red;
+  
+  
+    border: none;
+    border-radius: 3px;
+    margin-right: 10px;
+  
+  
+    padding: 10px 40px;
+    cursor: pointer;
+  
+}
+  
+.form-row-cancelar button:hover {
+    background-color: rosybrown;
+}
+  
+  
+.form-row-cancelar button:active {
+    background-color: red;
+}
+
+.contenedor{
+
+    display: flex;
+    padding: 3px;
+}
+
+
+
+ /*------------------FOOTER----------------------------------*/
+
+footer{
+    clear: both;
+    background-color: #03A9F4;
+    padding: 35px;
+    width: 100%;
+}
+
+
+/*-------------------------MEDIA QUERYS----------------------------*/
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+   
+    .checkbtn{
+        display: block;
+
+    }
+    .navbar {
+        height: 0vh;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: #2c3e50;
+        text-align: center;
+    
+        transition: all 0.5s;
+        overflow: hidden;
+        
+    }
+    
+
+    #check:checked ~ ul{
+        left: 0;
+        display: block;
+    }
+    
+
+    .container-nav nav ul li{
+
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+
+    }
+
+    .container-nav nav ul li a{
+
+        font-size: 20px;
+    }
+
+    #check:checked ~ .checkbtn{
+
+        color: #2c3e50;
+    }
+
+    /* ACTIVE */
+   .navbar.active {
+     height: 100vh;
+   }
+
+  .navbar.active ul.nav-links {
+     opacity: 1;
+  }
+
+}
+
+/* ------------- Para Pantallas de más de 700px ------------- */
+@media only screen and (min-width: 700px) {
+    .container-consultas {
+      padding: 50px;
+    }
+  
+    .form-row {
+      flex-direction: row;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+    .form-row input[type="text"] {
+      width: 250px;
+      height: initial;
+    }
+    .form-row input[type="email"] {
+        width: 250px;
+        height: initial;
+      }
+    .form-row label {
+      text-align: center;
+      width: 125px;
+      margin-top: 7px;
+      padding-right: 20px;
+    }
+
+    .form-row textarea {
+        width: 250px;
+    }
+
+    .contenedor{
+
+      margin-left: 120px;
+      display: flex;
+
+
+    }
+}

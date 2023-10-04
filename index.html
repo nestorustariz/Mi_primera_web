@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Pagina Web Personal</title>
+
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+   
+
+    
+</head>
+<body>
+    <header class="container-nav">
+
+        <h1 class="logo">Nombre</h1>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <nav class="navbar">
+            <script src="JS/scrip-nav.js"></script>
+          <ul class="nav-links">
+                <li><a href="#acerca-de-mi">INICIO</a></li>
+                <li><a href="#container">HABILIDADES</a></li>
+                <li><a href="#container-trabajos">TRABAJOS</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
+          </ul>
+        </nav>
+      </header>
+    <main>
+        <h1 id="acerca-de-mi">ACERCA DE MI</h1><br><br>
+        <div class="">
+            <img class="img" src="imagenes/yo.jpg" style="float:left;" width="250" height="250" alt="foto de nestor"
+            title="Foto Personal"> <br>
+        </div>
+        <div class="ACERCA">
+            <h2 class="subtitulo">DESARROLLADOR WEB - FRONTEND </h2> <br>
+            <p class="parrafo">Estudiante de 9 semestre de ingeniería en sistemas. capacidad para
+                trabajar en equipo y buen manejo de relaciones interpersonales, alto
+                liderazgo, sentido de pertenencia y compromiso por los resultados,
+                adaptabilidad al cambio y tolerancia a la frustración.
+            </p>
+            <br>
+            <br>
+        </div>
+        <div class="contenedor">
+            <div class="container-1">
+                <div class="col-sm-6"><h6>Nombres: <span class="text-secondary">Nestor Enrique</span></h6></div>
+                <div class="col-sm-6"><h6>Apellidos: <span class="text-secondary">Ustariz Andrade</span></h6></div>
+                <div class="col-sm-6"><h6>Estudios: <span class="text-secondary">Universidad Popular del Cesar</span></h6></div>
+                <div class="col-sm-6"><h6>Telefono: <span class="text-secondary">+57 3246826739</span></h6></div>
+                <div class="col-sm-6"><h6>Email: <span class="text-secondary">andradekike0@gmail.com</span></h6></div>
+                <div class="col-sm-6"><h6>Ubicación: <span class="text-secondary">Valledupar - Cesar, COLOMBIA</span></h6></div>
+                <div class="col-sm-6"><h6>Disponibilidad: <span class="text-secondary">Disponible</span></h6></div>
+            </div>
+        </div>
+    </main>
+
+    <div id="container">
+    
+        <h1 class="hablidades">HABILIDADES</h1><br><br>
+        <div class="container-habilidades">
+            <div class="box" style="--i:85%; --clr:#6DB918;">
+                <div class="circle">
+                    <h3>85<small>%</small></h3>
+    
+                </div>
+                <h4>HTML</h4>
+            </div>
+            <div class="box" style="--i:50%; --clr:#D93902;"> 
+    
+                <div class="circle">
+                    <h3>50<small>%</small></h3>
+                </div>
+                <h4>CSS</h4>
+            </div>
+            <div class="box" style="--i:35%; --clr:#702ED9;"> 
+    
+                <div class="circle">
+                    <h3>35<small>%</small></h3>
+                </div>
+                <h4>JavaScript</h4>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="container-trabajos">
+        <h1 id="trabajos">TRABAJOS</h1><br></br>
+        <div class="trabajos-container">
+            <div class="card">
+                <div class="image">
+                    <img src="imagenes/aplicativo.png" alt="">
+                </div>
+                <div class="content">
+                    <h2> Trabajo 1</h2>
+                    <p> Aplicativo web para una iglesia cristiana</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="image">
+                    <img src="imagenes/concepto-aplicacion-caridad_23-2148608518.png" alt="">
+                </div>
+                <div class="content">
+                    <h2> Trabajo 2</h2>
+                    <p> Aplicativo movil para una iglesia cristiana</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-consultas">
+
+        <h1>CONTACTO</h1>
+        <p><em>¡Esperamos tu consulta!</em></p>
+        <form action="" method="get" class="formulario" id="formularios">
+            <div class="form-row">
+                <label for="nombre">Nombres: </label>
+                <input id="nombres" name="nombre" type="text" />
+              </div>
+            
+            <div class="form-row">
+                <label for="email">Email:</label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="pepe@gmail.com"
+                  
+                />
+            </div>
+         
+            <div class="form-row">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje"></textarea>
+            </div>
+
+            <div class="contenedor">
+
+              <div class="form-row">
+                <button type="submit" onclick='return enviarFormulario();'>Enviar</button>
+              </div>
+
+             <div class="form-row-cancelar">
+                <button type="reset">Cancelar</button>
+              </div>
+
+
+            </div>            
+        
+  
+            <p class="alertas" id="alertas"></p>
+        </form>
+        
+    </div>
+
+    <footer>
+        <section>   
+            <ul> 
+                <a href="https://wa.me/3246826739" target="_blank">
+            
+                <img src="imagenes/whatsapp.png" alt="logo de WhatsApp" width="45" height="45"
+                title="WhatsApp">
+                </a>
+            </ul>
+        </section>
+    </footer>
+    <script src="JS/scripForm.js"></script>
+    <script src="JS/scrip.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
